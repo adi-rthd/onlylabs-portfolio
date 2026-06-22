@@ -83,7 +83,7 @@ export default function Projects() {
 
           <div className="flex items-center gap-3">
             <a 
-              href="https://github.com/adirathod1822" 
+              href="https://github.com/adi-rthd" 
               target="_blank" 
               rel="noreferrer"
               className="p-3 rounded-xl bg-white/5 border border-white/10 text-gray-400 hover:text-white hover:bg-white/10 transition-all duration-200"
@@ -357,7 +357,7 @@ export default function Projects() {
             </a>
             <span>•</span>
             <a 
-              href="https://github.com/adirathod1822" 
+              href="https://github.com/adi-rthd" 
               target="_blank" 
               rel="noreferrer"
               className="flex items-center gap-1 hover:text-white transition-colors"

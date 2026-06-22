@@ -7,7 +7,7 @@ export default function Contact() {
   const [copiedEmail, setCopiedEmail] = useState(false);
 
   const copyEmail = () => {
-    navigator.clipboard.writeText("adirathod1822@gmail.com");
+    navigator.clipboard.writeText("adi-rthd@gmail.com");
     setCopiedEmail(true);
     setTimeout(() => setCopiedEmail(false), 2000);
   };
@@ -39,7 +39,7 @@ export default function Contact() {
             </div>
             <div className="text-left">
               <p className="text-[10px] font-mono text-gray-500">DIRECT EMAIL</p>
-              <p className="text-sm font-semibold text-white font-mono">adirathod1822@gmail.com</p>
+              <p className="text-sm font-semibold text-white font-mono">adi-rthd@gmail.com</p>
             </div>
           </div>
 
@@ -85,7 +85,7 @@ export default function Contact() {
           </a>
 
           <a
-            href="https://github.com/adirathod1822"
+            href="https://github.com/adi-rthd"
             target="_blank"
             rel="noreferrer"
             className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/5 border border-white/5 hover:border-white/10 text-gray-400 hover:text-white transition-all text-xs font-mono"

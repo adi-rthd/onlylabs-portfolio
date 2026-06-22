@@ -68,7 +68,7 @@ export default function Navbar() {
           {/* Socials & CTA */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="https://github.com/adirathod1822"
+              href="https://github.com/adi-rthd"
               target="_blank"
               rel="noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
@@ -130,7 +130,7 @@ export default function Navbar() {
             <div className="flex flex-col gap-4">
               <div className="flex gap-4">
                 <a
-                  href="https://github.com/adirathod1822"
+                  href="https://github.com/adi-rthd"
                   target="_blank"
                   rel="noreferrer"
                   className="flex items-center gap-2 text-gray-400 hover:text-white"
