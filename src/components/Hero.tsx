@@ -30,7 +30,7 @@ export default function Hero() {
   const [inputVal, setInputVal] = useState('');
   const [booting, setBooting] = useState(true);
 
-  const consoleEndRef = React.useRef<HTMLDivElement>(null);
+  const consoleBodyRef = React.useRef<HTMLDivElement>(null);
   const inputRef = React.useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -51,8 +51,8 @@ export default function Hero() {
   }, []);
 
   useEffect(() => {
-    if (consoleEndRef.current) {
-      consoleEndRef.current.scrollIntoView({ behavior: 'smooth' });
+    if (consoleBodyRef.current) {
+      consoleBodyRef.current.scrollTop = consoleBodyRef.current.scrollHeight;
     }
   }, [history]);
 
@@ -250,6 +250,7 @@ export default function Hero() {
             
             {/* Console Screen */}
             <div 
+              ref={consoleBodyRef}
               onClick={focusInput}
               className="p-5 space-y-2.5 min-h-[220px] max-h-[300px] overflow-y-auto no-scrollbar cursor-text"
             >
@@ -279,7 +280,6 @@ export default function Hero() {
                   autoFocus
                 />
               </form>
-              <div ref={consoleEndRef} />
             </div>
           </div>
         </motion.div>
