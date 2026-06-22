@@ -160,7 +160,7 @@ export default function Hero() {
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-mono text-gray-400">
               <span className="h-2 w-2 rounded-full bg-cyan-400 animate-ping" />
-              SDE-1 Backend Engineering Portfolio
+              Crafted Under the OnlyLabs Banner
             </div>
             
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.1] selection:bg-cyan-500/30">
