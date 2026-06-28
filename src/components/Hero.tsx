@@ -149,10 +149,10 @@ export default function Hero() {
   return (
     <section className="min-h-[70vh] flex flex-col justify-center py-6 md:py-12 relative">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        
+
         {/* Text Content */}
         <div className="lg:col-span-7 space-y-6">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
@@ -162,7 +162,7 @@ export default function Hero() {
               <span className="h-2 w-2 rounded-full bg-cyan-400 animate-ping" />
               Crafted Under the OnlyLabs Banner
             </div>
-            
+
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.1] selection:bg-cyan-500/30">
               I build systems that <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-indigo-400 to-purple-500">survive production.</span>
             </h1>
@@ -171,22 +171,22 @@ export default function Hero() {
             <p className="text-sm font-mono text-cyan-400/80 font-medium">
               Building under the <Link to="/onlylabs" className="text-white border-b border-white/20 pb-0.5 hover:border-white transition-all">OnlyLabs</Link> banner.
             </p>
-            
+
             <p className="text-lg md:text-xl text-gray-400 max-w-xl leading-relaxed">
               Backend Engineer with 2 years of experience designing scalable APIs, resolving critical production issues, and shipping products from idea to deployment.
             </p>
           </motion.div>
 
           {/* Technology Badges */}
-          <motion.div 
+          <motion.div
             className="flex flex-wrap gap-2.5"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
             {badges.map((badge, idx) => (
-              <span 
-                key={idx} 
+              <span
+                key={idx}
                 className={`px-3 py-1 text-xs font-mono font-medium bg-white/[0.02] border ${badge.border} ${badge.textCol} rounded-full cursor-default hover:bg-white/5 transition-colors`}
               >
                 {badge.text}
@@ -195,30 +195,30 @@ export default function Hero() {
           </motion.div>
 
           {/* CTAs */}
-          <motion.div 
+          <motion.div
             className="flex flex-wrap items-center gap-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.6 }}
           >
-            <Link 
-              to="/projects" 
+            <Link
+              to="/projects"
               className="flex items-center gap-2 px-6 py-3.5 bg-white text-black font-semibold text-sm rounded-xl hover:bg-gray-200 transition-all duration-200 shadow-lg shadow-white/5 hover:translate-y-[-1px]"
             >
               Explore Projects <ArrowRight size={16} />
             </Link>
-            
-            <a 
-              href="/resume.pdf" 
-              target="_blank" 
-              rel="noreferrer"
+
+            <a
+              href="https://api-split.onlylabs.in/downloads/Rezume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 px-5 py-3.5 bg-[#0a0a0c] border border-white/10 font-semibold text-sm text-gray-300 rounded-xl hover:bg-white/5 hover:text-white transition-all duration-200 hover:translate-y-[-1px]"
             >
               <Download size={16} /> Download Resume
             </a>
-            
-            <Link 
-              to="/contact" 
+
+            <Link
+              to="/contact"
               className="flex items-center gap-1.5 px-4 py-3 bg-transparent text-gray-400 font-semibold text-sm hover:text-white transition-colors"
             >
               <Mail size={16} /> Contact Me
@@ -227,7 +227,7 @@ export default function Hero() {
         </div>
 
         {/* Mock Terminal UI */}
-        <motion.div 
+        <motion.div
           className="lg:col-span-5 w-full"
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -247,9 +247,9 @@ export default function Hero() {
               </div>
               <div className="w-12" /> {/* Spacer */}
             </div>
-            
+
             {/* Console Screen */}
-            <div 
+            <div
               ref={consoleBodyRef}
               onClick={focusInput}
               className="p-5 space-y-2.5 min-h-[220px] max-h-[300px] overflow-y-auto no-scrollbar cursor-text"
@@ -257,7 +257,7 @@ export default function Hero() {
               {history.map((line, index) => {
                 if (!line) return null;
                 return (
-                  <div 
+                  <div
                     key={index}
                     className={`whitespace-pre-wrap ${line.color || ''}`}
                   >
@@ -265,11 +265,11 @@ export default function Hero() {
                   </div>
                 );
               })}
-              
+
               {/* Command Input Prompt */}
               <form onSubmit={handleCommand} className="flex items-center gap-1.5 pt-1">
                 <span className="text-cyan-400 font-bold shrink-0">aditya@contabo-vps:~$</span>
-                <input 
+                <input
                   ref={inputRef}
                   type="text"
                   value={inputVal}
